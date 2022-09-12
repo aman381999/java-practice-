@@ -1,0 +1,20 @@
+package com.company;
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+//        ArrayListExample<Integer> list = new ArrayListExample<>();
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        list.add(12);
+        list.add(34);
+        list.add(55);
+        list.add(66);
+        list.add(78);
+        list.add(99);
+        list.add(55);
+        list.add(53);
+        System.out.println(list);  //[12, 34, 55, 66, 78, 99, 55, 53]
+    }
+}
