@@ -16,5 +16,10 @@ public class ArrayListExample {
         list.add(55);
         list.add(53);
         System.out.println(list);  //[12, 34, 55, 66, 78, 99, 55, 53]
+
+        list.set(1,12);
+        System.out.println(list);  //[12, 12, 55, 66, 78, 99, 55, 53]
+
+        System.out.println(list.contains(78));  //true
     }
 }
