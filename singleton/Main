@@ -2,10 +2,10 @@ package com.company.singleton;
 
 public class Main {
     public static void main(String[] args) {
-        Singleton obj = Singleton.getInstance();
+        Singleton obj = Singleton.getInstance();  // debugging output // obj: Singleton@732
 
-        Singleton obj2 = Singleton.getInstance();
+        Singleton obj2 = Singleton.getInstance(); // debugging output // obj: Singleton@732
 
-        Singleton obj3 = Singleton.getInstance();
+        Singleton obj3 = Singleton.getInstance(); // debugging output // obj: Singleton@732
     }
 }
