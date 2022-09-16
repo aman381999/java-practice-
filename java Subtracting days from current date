@@ -1,0 +1,29 @@
+package com.company;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+
+public class Date1 {
+    public static void main(String[] args) throws ParseException {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate now = LocalDate.now();
+        String newNow = dtf.format(now);
+
+        LocalDate date = LocalDate.parse(newNow);
+        System.out.println(date);                   // 2022-09-16
+
+        LocalDate returnvalue = date.minusDays(15);
+        System.out.println(returnvalue);            // 2022-09-01
+
+        DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+        String newNow1 = dtf1.format(date);
+        System.out.println(newNow1);                // 2022/09/16
+        String newNow2 = dtf1.format(returnvalue);
+        System.out.println(newNow2);                // 2022/09/01
+
+    }
+}
