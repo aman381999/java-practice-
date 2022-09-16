@@ -1,0 +1,21 @@
+package com.company;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
+public class RemoveComma {
+    public static void main(String[] args) {
+        String val = "Head,, Brokerage 08.08.2022,, Aug Month till Date,, Monthly Target,, Apr22-Till Date Brokerage,, Yearly Target,, 08.08.2022 KYC,, Aug Month KYC Generated,, YTD KYC Generated,, Achieved % of Yearly Target,, Per Day Target Till 08.08.2022,, Till Date Required,, Till Date Negative,, Daily % Achieved Vs Till Date Required,, Axay Dixit,, 2,85,180,, 16,08,866,, 52,50,000,, 1,96,31,636,, 6,30,00,000,, 1,, 12,, 302,, 31.16,, 2,55,060.73,, 2,27,00,404.86,, -30,68,768.86,, -13.52,, Chirag Padshah,, 29,656,, 2,11,675,, 10,41,667,, 32,24,787,, 1,25,00,000,, 2,, 12,, 251,, 25.80,, 50,607.29,, 45,04,048.58,, -12,79,261.71,, -28.40,, Indrabhuvan Yadav,, 18,958,, 1,47,760,, 4,58,333,, 30,76,944,, 55,00,000,, 0,, 5,, 96,, 55.94,, 22,267.21,, 19,81,781.38,, 10,95,162.35,, 55.26,, Sumit Kansara,, 51,328,, 2,59,569,, 11,08,333,, 40,10,395,, 1,33,00,000,, 0,, 1,, 46,, 30.15,, 53,846.15,, 47,92,307.69,, -7,81,912.69,, -16.32,,";
+        val = val.replace(",,", "*");
+        String newVal = val.replace(",", "");
+        String newVal1 = newVal.replace("*", ",");
+        System.out.println(newVal1);  // Head, Brokerage 08.08.2022, Aug Month till Date, Monthly Target, Apr22-Till Date Brokerage, Yearly Target, 08.08.2022 KYC, Aug Month KYC Generated, YTD KYC Generated, Achieved % of Yearly Target, Per Day Target Till 08.08.2022, Till Date Required, Till Date Negative, Daily % Achieved Vs Till Date Required, Axay Dixit, 285180, 1608866, 5250000, 19631636, 63000000, 1, 12, 302, 31.16, 255060.73, 22700404.86, -3068768.86, -13.52, Chirag Padshah, 29656, 211675, 1041667, 3224787, 12500000, 2, 12, 251, 25.80, 50607.29, 4504048.58, -1279261.71, -28.40, Indrabhuvan Yadav, 18958, 147760, 458333, 3076944, 5500000, 0, 5, 96, 55.94, 22267.21, 1981781.38, 1095162.35, 55.26, Sumit Kansara, 51328, 259569, 1108333, 4010395, 13300000, 0, 1, 46, 30.15, 53846.15, 4792307.69, -781912.69, -16.32,
+
+
+        ArrayList newArray = new ArrayList(Collections.singleton(newVal1));
+        System.out.println(newArray);  // [Head, Brokerage 08.08.2022, Aug Month till Date, Monthly Target, Apr22-Till Date Brokerage, Yearly Target, 08.08.2022 KYC, Aug Month KYC Generated, YTD KYC Generated, Achieved % of Yearly Target, Per Day Target Till 08.08.2022, Till Date Required, Till Date Negative, Daily % Achieved Vs Till Date Required, Axay Dixit, 285180, 1608866, 5250000, 19631636, 63000000, 1, 12, 302, 31.16, 255060.73, 22700404.86, -3068768.86, -13.52, Chirag Padshah, 29656, 211675, 1041667, 3224787, 12500000, 2, 12, 251, 25.80, 50607.29, 4504048.58, -1279261.71, -28.40, Indrabhuvan Yadav, 18958, 147760, 458333, 3076944, 5500000, 0, 5, 96, 55.94, 22267.21, 1981781.38, 1095162.35, 55.26, Sumit Kansara, 51328, 259569, 1108333, 4010395, 13300000, 0, 1, 46, 30.15, 53846.15, 4792307.69, -781912.69, -16.32,]
+
+    }
+
+}
